@@ -11,9 +11,12 @@
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
+    <link href='http://fonts.googleapis.com/css?family=Ledger' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+  	<div id="wrapper">
+    	<%= yield %>
+    </div>
   </body>
 </html>
