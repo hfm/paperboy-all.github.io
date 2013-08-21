@@ -1,1 +1,104 @@
-@charset "utf-8";
+body{
+	text-align:center;
+	font-size:123.1%;
+	background:url(/images/bg_body.gif);
+	padding-top:2em;
+	color:#3b3a37;
+}
+@media screen and (max-width: 900px) {
+	body{
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 767px) {
+	body{
+		font-size:11px;
+	}
+}
+#wrapper{
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+}
+#wrapper{
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+}
+
+@media screen and (max-width: 900px) {
+	#wrapper{
+		width:90%;
+	}
+}
+h1{
+	font-family: 'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;	
+	font-size:300%;
+	margin-bottom:1em;
+	color:#000;
+	text-shadow:
+0 -1px 0 rgba(0, 0, 0, 1),
+0 1px 0 rgba(255, 255, 255, 1);
+
+}
+h2{
+	font-weight:bold;
+	font-size:197%;
+	color:#000;
+	margin-bottom:1em;
+}
+h3{
+	font-weight:bold;
+	font-size:138.5%;
+	color:#000;
+	margin-bottom:1em;
+	border-bottom:1px dotted #000;
+	display:inline-block;
+}
+p{
+	margin-bottom:1em;
+	
+}
+hr{
+	height: 2px;
+	background-color: #3b3a37;
+	border: 1px #3b3a37 solid;
+	color: #3b3a37;
+	margin-bottom:2em;
+}
+ul{
+	list-style:inside disc;
+	margin-bottom:1em;
+}
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	background: rgba(255,255,255,0.3);
+	margin-bottom:1em;
+}
+code {
+	display: block;
+	padding: 0.5em 1em;
+	border: 1px solid #bebab0;
+	margin-bottom:1em;
+}
+blockquote{
+	font-family: 'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;	
+	background: rgba(0,0,0,0.05);
+	border-top:1px solid rgba(0,0,0,0.05);
+	border-bottom:1px solid rgba(255,255,255,0.5);
+	padding:1.5em 1em 1.5em 3em;
+	position:relative;
+	margin-bottom:2em;
+}
+blockquote:before{
+	content:"\"";
+	font-size:600%;
+	line-height:1em;
+	font-family: 'Ledger', serif;	
+	color:#fff;
+	position:absolute;
+	left:0.1em;
+	top:0;
+}	
