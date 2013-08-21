@@ -4,6 +4,11 @@ paperboy&amp;co.の公開ドキュメントを置くためのリポジトリで�
 
 [http://paperboy-all.github.io/](http://paperboy-all.github.io/)
 
+## ブランチ
+
+  * 管理用: manageブランチ(default branchに指定されています)
+  * 公開用: masterブランチ
+
 ## 書き方
 
 [middleman](http://middleman-guides.e2esound.com/)を使ってます。
