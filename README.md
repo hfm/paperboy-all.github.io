@@ -16,6 +16,7 @@ paperboy&amp;co.の公開ドキュメントを置くためのリポジトリで�
   1. `source/docs`以下に、必要ならば適当にディレクトリをほる
   2. `.md`という拡張子で、markdownで書く
   3. `$ bundle exec middleman`でサーバを起動し、[http://localhost:4567/](http://localhost:4567/)にアクセス
+  4. manageブランチに対してpull requestを送る
 
 ## デプロイ
 
