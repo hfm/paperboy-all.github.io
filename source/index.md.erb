@@ -1,0 +1,7 @@
+---
+title: paperboy-all.github.io
+---
+
+<% sitemap.resources.select { |r| r.path =~ /^docs/ }.each do |r| %>
+  * [<%= r.metadata[:page]['title'] %>](<%= r.path %>)
+<% end %>

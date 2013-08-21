@@ -13,6 +13,10 @@ paperboy&amp;co.の公開ドキュメントを置くためのリポジトリで�
 
 [middleman](http://middleman-guides.e2esound.com/)を使ってます。
 
+  1. `source/docs`以下に、必要ならば適当にディレクトリをほる
+  2. `.md`という拡張子で、markdownで書く
+  3. `$ bundle exec middleman`でサーバを起動し、[http://localhost:4567/](http://localhost:4567/)にアクセス
+
 ## デプロイ
 
 `middleman deploy`コマンドを使います。
@@ -20,3 +24,5 @@ paperboy&amp;co.の公開ドキュメントを置くためのリポジトリで�
 ```
 $ bundle exec middleman deploy
 ```
+
+上記で、このリポジトリのmasterブランチにpushされ、それが[http://paperboy-all.github.io/](http://paperboy-all.github.io/)に反映されます。
