@@ -51,6 +51,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# It works like GitHub Flavor Markdown
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+activate :syntax, :linenos => 'inline'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
