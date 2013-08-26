@@ -50,8 +50,10 @@ manifestのコーディング規約を決めとこう。
 ### modeのクオート
 本家では、ファイルのmodeも 「4桁でクオートすれ」ってあるけど、なんとなく気に食わないので、
 
-    # 3桁でクオート無し
-    mode => 644
+```pp
+# 3桁でクオート無し
+mode => 644
+```
 
 を基本とします。
 
@@ -59,60 +61,72 @@ manifestのコーディング規約を決めとこう。
 
 本家では、「変数使うときはダブル、じゃないときはシングル」ってあるけど、エディタでみたときにシンタックスカラーがごっちゃりして解りにくいので、こうします。
 
-    # リソースネームはシングル(変数あるときはダブル)、他は変数含もうが含むまいが全部ダブル。
-    file { '//foo/baa':
-      source => "puppet:///foo/baa",
-     }
+```pp
+# リソースネームはシングル(変数あるときはダブル)、他は変数含もうが含むまいが全部ダブル。
+file { '//foo/baa':
+  source => "puppet:///foo/baa",
+}
+```
 
 ### 予約語となっているパラメータ引数はクオートしない
 
 **Good:**
 
-    file { '/tmp':
-      ensure => directory,
-    }
+```pp
+file { '/tmp':
+  ensure => directory,
+}
+```
 
 **Bad:**
 
-    file { '/tmp':
-      ensure => "directory",
-    }
+```pp
+file { '/tmp':
+  ensure => "directory",
+}
+```
 
 
 ### 同一タイプリソースの間に空行
 
 パラメータが多いと、複数並んだ時に見づらいため、一行空けます。
 
-    file {
-      '/foo/baa':
-        source  => "puppet///foo/baa",
-        mode    => 644,
-        require => File['/foo'];
+```pp
+file {
+  '/foo/baa':
+    source  => "puppet///foo/baa",
+    mode    => 644,
+    require => File['/foo'];
 
-      '/aaa/bbb':
-        content => template("aaa/bbb"),
-        mode    => 755;
-    }
+  '/aaa/bbb':
+    content => template("aaa/bbb"),
+    mode    => 755;
+}
+```
 
 ### 複数requireで改行
 
 横に並べるとあとから編集しにくいので改行いれる。
 
-    sevice { 'mydaemon':
-      ensure  => running,
-      require => [
-        Package['mydaemon'],
-        File['mydaemon.conf'],
-      ]
-    }
+```pp
+sevice { 'mydaemon':
+  ensure  => running,
+  require => [
+    Package['mydaemon'],
+    File['mydaemon.conf'],
+  ]
+}
+```
 
 ### include は1つずつ
 
 横に並べない。includeの順はそれなりに処理順でもあるので、横並びだと、順番を変えたい時に編集がめんどうです。
 
-    # これダメ
-    include base, base::config, base::packages
-    # こう
-    include base
-    include base::config
-    include base::packages
+```pp
+# これダメ
+include base, base::config, base::packages
+# こう
+include base
+include base::config
+include base::packages
+```
