@@ -28,31 +28,31 @@ legend {color:#000;}
 
 /*Reset CSS*/
 body {
-	color: #232425;
-	font-family:メイリオ, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', Osaka, sans-serif;
-	font-size:13px;
-    *font-size:small;
-    *font:x-small;
-	line-height: 1.6;
-	background:#fff;
+  color: #232425;
+  font-family:メイリオ, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', Osaka, sans-serif;
+  font-size:13px;
+  *font-size:small;
+  *font:x-small;
+  line-height: 1.6;
+  background:#fff;
 }
 
 
 
 ul,ol {
-	list-style:none;
+  list-style:none;
 }
 table {
-    font-size:inherit;
-    font:100%;
+  font-size:inherit;
+  font:100%;
 }
 .clearfix {
-	zoom: 1;
+  zoom: 1;
 }
 .clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 a{color:#01628f;text-decoration:none;}
