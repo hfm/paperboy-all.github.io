@@ -130,3 +130,21 @@ include base
 include base::config
 include base::packages
 ```
+
+### Relationship Declarationsのインデント
+
+縦方向に整列することで読みやすくする。
+
+**Good:**
+
+```pp
+   Class['hoge']
+-> Class['hoge::install']
+```
+
+**Bad:**
+
+```pp
+Class['hoge']
+-> Class['hoge::install']
+```
