@@ -47,6 +47,10 @@ body {
   background: url(/images/pepapon-tab-blue.png) no-repeat bottom center;
 }
 
+#contents {
+  padding: 2em 0;
+}
+
 h1 {
   font-family: 'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
   font-size: 300%;
