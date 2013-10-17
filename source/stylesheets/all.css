@@ -20,12 +20,6 @@ body{
   margin:0 auto;
   text-align:left;
 }
-#wrapper{
-  width:900px;
-  margin:0 auto;
-  text-align:left;
-}
-
 @media screen and (max-width: 900px) {
   #wrapper{
     width:90%;
@@ -39,7 +33,6 @@ h1{
   text-shadow:
   0 -1px 0 rgba(0, 0, 0, 1),
   0 1px 0 rgba(255, 255, 255, 1);
-
 }
 h2{
   font-weight:bold;
@@ -57,7 +50,6 @@ h3{
 }
 p{
   margin-bottom:1em;
-
 }
 hr{
   height: 2px;
