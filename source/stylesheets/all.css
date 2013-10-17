@@ -31,7 +31,17 @@ body {
 }
 
 #header {
-  height: 40px;
+  height: 60px;
+}
+
+#brand {
+  float: left;
+  height: 60px;
+  display: block;
+  color: #3b3a37;
+  font-family: 'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  text-decoration: none;
+  line-height: 60px;
 }
 
 #pepapon-tab {
@@ -48,7 +58,7 @@ body {
 }
 
 #contents {
-  padding: 2em 0;
+  padding: 2em 0 4em;
 }
 
 h1 {
