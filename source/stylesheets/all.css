@@ -17,18 +17,6 @@ body {
   }
 }
 
-#wrapper {
-  width: 900px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-@media screen and (max-width: 900px) {
-  #wrapper {
-    width: 90%;
-  }
-}
-
 .inner {
   position: relative;
   width: 900px;
