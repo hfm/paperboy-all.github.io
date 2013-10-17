@@ -57,6 +57,10 @@ body {
   background: url(/images/pepapon-tab-blue.png) no-repeat bottom center;
 }
 
+#pepapon-tab:hover {
+  height: 45px;
+}
+
 #contents {
   padding: 2em 0 4em;
 }
