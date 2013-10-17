@@ -2,7 +2,6 @@ body{
   text-align:center;
   font-size:123.1%;
   background:url(/images/bg_body.gif);
-  padding-top:2em;
   color:#3b3a37;
 }
 @media screen and (max-width: 900px) {
@@ -24,6 +23,32 @@ body{
   #wrapper{
     width:90%;
   }
+}
+.inner{
+  position:relative;
+  width:900px;
+  margin:0 auto;
+  text-align:left;
+}
+@media screen and (max-width: 900px) {
+  .inner{
+    width:90%;
+  }
+}
+#header{
+  height:40px;
+}
+#pepapon-tab{
+  position:absolute;
+  top:0;
+  right:20px;
+  width:29px;
+  height:40px;
+  text-indent:-9999px;
+  display:block;
+  overflow:hidden;
+  outline:none;
+  background:url(/images/pepapon-tab-blue.png) no-repeat bottom center;
 }
 h1{
   font-family: 'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
