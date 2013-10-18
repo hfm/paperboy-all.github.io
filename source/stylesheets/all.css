@@ -15,21 +15,46 @@ body{
     font-size:11px;
   }
 }
-#wrapper{
+.inner{
+  position:relative;
   width:900px;
   margin:0 auto;
   text-align:left;
 }
-#wrapper{
-  width:900px;
-  margin:0 auto;
-  text-align:left;
-}
-
-@media screen and (max-width:900px) {
-  #wrapper{
+@media screen and (max-width: 900px) {
+  .inner{
     width:90%;
   }
+}
+#header{
+  height:60px;
+}
+#brand{
+  float:left;
+  height:60px;
+  display:block;
+  color:#3b3a37;
+  font-family:'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  text-decoration:none;
+  line-height:60px;
+}
+#pepapon-tab{
+  position:absolute;
+  top:0;
+  right:0;
+  width:29px;
+  height:40px;
+  text-indent:-9999px;
+  display:block;
+  overflow:hidden;
+  outline:none;
+  background:url(/images/pepapon-tab-blue.png) no-repeat bottom center;
+}
+#pepapon-tab:hover{
+  height:45px;
+}
+#contents{
+  padding:2em 0 4em;
 }
 h1{
   font-family:'Ledger', "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
@@ -78,7 +103,7 @@ ul>li>ul{
   margin-bottom:0;
   padding:0.5em 0 1em 1em;
 }
-pre {
+pre{
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
@@ -88,13 +113,13 @@ pre {
   background:rgba(255,255,255,0.4);
   margin-bottom:1em;
 }
-pre.highlight {
+pre.highlight{
   display:block;
   padding:0.5em 1em;
   border:1px solid #bebab0;
   margin-bottom:1em;
 }
-code {
+code{
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
