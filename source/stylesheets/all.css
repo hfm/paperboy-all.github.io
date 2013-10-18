@@ -2,7 +2,6 @@ body{
   text-align:center;
   font-size:123.1%;
   background:url(/images/bg_body.gif);
-  padding:3em 0 4em 0;
   color:#3b3a37;
 }
 @media screen and (max-width:900px) {
