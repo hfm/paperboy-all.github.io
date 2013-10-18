@@ -1,8 +1,8 @@
 ---
-title: Puppetマニフェストスタイルガイド
+title: Puppet manifest 独自コーディング規約
 ---
 
-# manifestコーディング規約
+# Puppet manifest 独自コーディング規約
 
 manifestのコーディング規約を決めとこう。
 
